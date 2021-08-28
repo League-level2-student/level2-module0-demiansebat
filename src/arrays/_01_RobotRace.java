@@ -18,7 +18,7 @@ for (int i = 0; i < robots.length; i++) {
 	robots[i]= bob;
 }
 		//4. make each robot start at the bottom of the screen, side by side, facing up
-
+//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
 	//5. use another for loop to iterate through the array and make each robot move 
 	//   a random amount less than 50.
 
