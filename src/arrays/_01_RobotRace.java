@@ -9,12 +9,12 @@ public class _01_RobotRace {
 public static void main(String[] args) {
 Random randy= new Random();
 	//2. create an array of 5 robots.
-Robot [] robots= new Robot[5];
+Robot [] robots= new Robot[7];
 	//3. use a for loop to initialize the robots.
 for (int i = 0; i < robots.length; i++) {
 	Robot bob= new Robot();
 	bob.setY(525);
-	bob.setX(i*175+95);
+	bob.setX(i*100+95);
 	robots[i]= bob;
 }
 		//4. make each robot start at the bottom of the screen, side by side, facing up
@@ -31,8 +31,10 @@ boolean keepmoving=true;
 while (keepmoving) {
 	for (int i = 0; i < robots.length; i++) {
 		robots[i].move(randy.nextInt(50));
-		if(robots[i].getY()<=70) {
+		if(robots[i].getY()<=55) {
 			keepmoving=false;
+			System.out.println("Congrats! You made it to the top!");
+			break;
 		}
 	}
 	
