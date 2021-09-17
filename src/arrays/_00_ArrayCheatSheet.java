@@ -18,7 +18,7 @@ public class _00_ArrayCheatSheet {
 		for (int i = 0; i < strings.length; i++) {
 			System.out.println(strings[i]);
 		}
-		
+		//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
 		//6. make an array of 50 integers
 		int []manyints= new int[50];
 		//7. use a for loop to make every value of the integer array a random number
